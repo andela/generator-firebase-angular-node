@@ -1,7 +1,7 @@
 {
   "name": "generator-firebase-angular-node",
-  "version": "0.1.0",
-  "description": "Yeoman generator",
+  "version": "0.2.0",
+  "description": "Yeoman generator for the FAN Stack (Firebase, Angular, Node)",
   "license": "MIT",
   "main": "app/index.js",
   "repository": "andela/generator-firebase-angular-node",
@@ -20,7 +20,12 @@
     "app"
   ],
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "firebase",
+    "angular",
+    "node",
+    "angular-material",
+    "andela"
   ],
   "dependencies": {
     "yeoman-generator": "^0.18.9",
