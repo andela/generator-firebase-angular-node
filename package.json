@@ -4,7 +4,7 @@
   "description": "Yeoman generator",
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "andela-nenegesi/generator-firebase-angular-node",
+  "repository": "andela/generator-firebase-angular-node",
   "author": {
     "name": "Andela",
     "email": "info@andela.co",
