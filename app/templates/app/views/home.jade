@@ -1,0 +1,7 @@
+md-content.md-default-theme.no-bg(layout="column" layout-fill)
+  md-toolbar#home-toolbar
+    .md-toolbar-tools
+      span.title My App
+      span(flex layout="row" layout-align="end center" ng-if="currentUser")
+        md-button(ng-click="showMenu($event)" aria-label="Show Bottom Sheet")
+          i.fa.fa-ellipsis-v

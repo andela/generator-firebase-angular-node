@@ -1,0 +1,33 @@
+md-content(flex="25")
+  md-toolbar(style="height: 50px")
+    .md-toolbar-tools
+      a(ui-sref="users")
+        span Users Editor
+  md-content.md-padding
+    md-content.md-padding
+      md-text-float(ng-model="search.name" label="Start typing name")
+    md-list
+      md-item(ng-repeat="user in users | orderBy:'name' | filter:search")
+        a(ui-sref="users/id({userId:user.$id})")
+          .user-list
+            img(ng-src="{{user.picture}}")
+            md-button.md-raised.md-primary.small-margin(ng-bind="user.name" aria-label="{{user.name}}")
+md-content(flex="75" layout="column" layout-fill).md-whiteframe-z1
+  md-toolbar(style="height: 50px")
+    .md-toolbar-tools
+      span(ng-bind="selectedUser.name" ng-init="user = selectedUser")
+      span(flex layout="row" layout-align="end center" ng-if="currentUser")
+      a(ui-sref="default")
+        i.fa.fa-home.large-text
+  md-content.md-padding(flex)
+    img(ng-src="{{selectedUser.picture}}" height="128")
+    form
+      md-text-float.long(label="Email Address" ng-model="selectedUser.email" disabled)
+      md-text-float.long(label="Full Name" ng-model="selectedUser.name")
+      md-text-float.long(label="First Name" ng-model="selectedUser.first_name")
+      md-text-float.long(label="Last Name" ng-model="selectedUser.last_name")
+      md-text-float.long(label="Alias" ng-model="selectedUser.known_as")
+      md-text-float.long(label="Slogan" ng-model="selectedUser.slogan")
+  md-toolbar(style="background-color: white; height: 50px")
+    .md-toolbar-tools
+      md-button(class="md-raised md-primary" ng-click="updateUser()") Save

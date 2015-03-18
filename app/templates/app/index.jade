@@ -1,0 +1,7 @@
+doctype html
+html(lang="en" ng-app="<%=gen.angModule%>")
+  head
+    title <%=gen.angModule%>
+    include shared/head
+  body(layout="row" layout-fill)
+    md-content.md-default-theme.no-bg(layout="row" layout-fill ui-view)

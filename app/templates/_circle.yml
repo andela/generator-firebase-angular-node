@@ -1,0 +1,15 @@
+dependencies:
+  pre:
+    - bower install
+  post:
+    - npm install module-deps
+    - npm install gulp -g
+test:
+  override:
+    - gulp browserify
+    - gulp test
+deployment:
+  production:
+    branch: master
+    heroku:
+      appname: my-heroku-app
