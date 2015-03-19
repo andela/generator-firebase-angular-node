@@ -1,4 +1,4 @@
-# FAN(Firebase Angular Node) Stack Generator [![Build Status](https://secure.travis-ci.org/andela-nenegesi/generator-firebase-angular-node.png?branch=master)](https://travis-ci.org/andela-nenegesi/generator-firebase-angular-node)
+# FAN(Firebase Angular Node) Stack Generator [![Build Status](https://secure.travis-ci.org/andela/generator-firebase-angular-node.png?branch=master)](https://travis-ci.org/andela-nenegesi/generator-firebase-angular-node)
 
 > Yeoman generator for creating FAN stack applications, using Firebase, AngularJS, and Node - lets you quickly set up a project following best practices. This generator also sets you up with AngularMaterial, AngularFire, and Gulp for running tasks.
 
