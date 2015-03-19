@@ -1,16 +1,16 @@
 var development = {
   firebase: {
-    rootRefUrl: "<%=devRootRef%>",
+    rootRefUrl: "<%=gen.devRootRef%>",
     serverUID: "<%=gen.appName%>",
-    secretKey: "<%=devSecret%>"
+    secretKey: "<%=gen.devSecret%>"
   }
 };
 
 var test = {
   firebase: {
-    rootRefUrl: "<%=testRootRef%>",
+    rootRefUrl: "<%=gen.testRootRef%>",
     serverUID: "<%=gen.appName%>",
-    secretKey: "<%=testSecret%>"
+    secretKey: "<%=gen.testSecret%>"
   }
 };
 
