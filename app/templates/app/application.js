@@ -1,7 +1,7 @@
 /* define our modules */
 angular.module('<%=gen.angModuleLower%>.services', ['firebase','ngCookies']);
 angular.module('<%=gen.angModuleLower%>.filters', []);
-angular.module("<%=gen.angModuleLower%>.directives", ['monospaced.elastic']);
+angular.module('<%=gen.angModuleLower%>.directives', ['monospaced.elastic']);
 angular.module('<%=gen.angModuleLower%>.controllers', []);
 
 /* load services */

@@ -100,6 +100,11 @@ module.exports = yeoman.generators.Base.extend({
         genObj
       );
       this.fs.copyTpl(
+        this.templatePath('lib'),
+        this.destinationPath('lib'),
+        genObj
+      );
+      this.fs.copyTpl(
         this.templatePath('routes'),
         this.destinationPath('routes'),
         genObj
