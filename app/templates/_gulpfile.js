@@ -62,7 +62,7 @@ gulp.task('nodemon', function () {
 
 gulp.task('scripts', function() {
   gulp.src(paths.scripts)
-    .pipe(concat('server.js'))
+    .pipe(concat('index.js'))
     .pipe(gulp.dest('./public/js'));
 });
 
@@ -72,7 +72,7 @@ gulp.task('browserify', function() {
   return b.bundle()
   .on('success', gutil.log.bind(gutil, 'Browserify Rebundled'))
   .on('error', gutil.log.bind(gutil, 'Browserify Error: in browserify gulp task'))
-  .pipe(source('server.js'))
+  .pipe(source('index.js'))
   .pipe(gulp.dest('./public/js'));
 });
 
