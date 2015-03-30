@@ -15,7 +15,7 @@ describe('Users Service Tests', function() {
   };
 
   beforeEach(function() {
-    module('Skilltree');
+    module('<%=gen.angModule%>');
   });
 
   beforeEach(inject(function($injector) {

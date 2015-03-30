@@ -1,7 +1,7 @@
 describe('Authentication Service Tests', function() {
   var Authentication, Refs;
 
-  beforeEach(module('Skilltree'));
+  beforeEach(module('<%=gen.angModule%>'));
 
   beforeEach(inject(function($injector) {
     Authentication = $injector.get('Authentication');
