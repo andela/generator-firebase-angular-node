@@ -21,6 +21,7 @@ Run `gulp` for building, and serving the built app.
 ## Prerequisites
 
 * Firebase - Create your development and test databases on [Firebase](https://www.firebase.com/).
+* Firebase - Make sure to enable Google Auth from the Login & Auth tab of your Firebase dashboard.
 
 ## Default Configurations
 
